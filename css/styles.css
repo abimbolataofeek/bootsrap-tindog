@@ -5,10 +5,12 @@ body {
 #title {
     background-color: #ff4c68;
     color: #fff;
+   
 }
 
 .container-fluid {
     padding: 3% 15%;
+    padding-bottom: 100px;
 }
 
 .headin-text {
@@ -64,12 +66,18 @@ p {
 .title-img {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+
 }
 
 /* Features Section */
 
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .feature-box {
@@ -125,3 +133,47 @@ p {
 .pricing-col{
     padding: 3% 2%;
 }
+
+/* CTA Section */
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+    padding-bottom: 100px;
+}
+.cta-h3{
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 4rem;
+}
+/* Footer Section */
+#footer{
+    text-align: center;
+    padding: 7%;
+}
+
+a{
+    color: black;
+    font-size:large;
+    padding: 0.5%;
+}
+a:hover{
+    color: #ff4c68;
+}
+.copy-right{
+    padding: 1%;
+    color: #8f7f8f;
+}
+
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-img{
+        position: static;
+        transform: rotate(0);
+    }
+}
+
